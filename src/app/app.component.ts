@@ -1,12 +1,15 @@
-import { DatePipe } from '@angular/common';
+import { DatePipe, DecimalPipe } from '@angular/common';
 import { Component } from '@angular/core';
+import { CustompipePipe } from './custompipe.pipe';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   imports: [
-    DatePipe
+    DatePipe,
+    DecimalPipe,
+    CustompipePipe,
   ]
 })
 export class AppComponent {
